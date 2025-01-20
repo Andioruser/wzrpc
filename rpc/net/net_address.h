@@ -47,8 +47,8 @@ public:
     uint16_t get_port() const {return m_port;}
 
 public:
-    static bool checkIvalidIPAddr(const std::string& ip);
-    
+    static bool CheckIvalidIPAddr(const std::string& ip);
+
 private:
 
     std::string m_ip;
