@@ -1,4 +1,4 @@
-#include RPC_MUTEX_H
+#ifndef RPC_MUTEX_H
 #define RPC_MUTEX_H 
 
 #include <pthread.h>
@@ -120,3 +120,6 @@ private:
   bool m_locked;
 };
 }
+
+
+#endif
