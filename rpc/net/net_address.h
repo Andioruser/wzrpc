@@ -4,6 +4,7 @@
 #include <memory>
 #include <sys/socket.h>
 #include <arpa/inet.h>
+#include <string.h>
 
 namespace rpc {
 
@@ -32,7 +33,7 @@ public:
 
     IPAddress(u_int16_t port);
 
-    IPAddress(sockaddr* addr);
+    IPAddress(sockaddr_in addr);
 
     sockaddr* getSocketAddr();
 
